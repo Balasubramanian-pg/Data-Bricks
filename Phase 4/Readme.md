@@ -269,3 +269,102 @@ In the next phase can focus on advanced engineering: CI/CD, Unity Catalog securi
 * Batch inference jobs
 * Drift detection
 * Model re-training schedules
+
+### Additional Topics You Can Add
+
+* **Cluster Policies in Jobs**
+
+  * Enforcing allowed node types.
+  * Limiting auto-scaling behavior.
+  * Cost control through job cluster templates.
+
+* **Job Clusters vs All-Purpose Clusters**
+
+  * When to use which.
+  * Performance and cost tradeoffs.
+
+* **Notifications & Alerting**
+
+  * Email alerts.
+  * PagerDuty and Slack hooks.
+  * Failure-only vs every-run notifications.
+
+* **Retry Logic & Timeout Management**
+
+  * Setting max retries.
+  * Setting timeout per task.
+  * Handling intermittent API failures.
+
+* **Task Dependencies in Multi-Task Jobs**
+
+  * Using the Jobs UI to create DAG-like flows.
+  * Running tasks in parallel vs sequential.
+  * Reusing cluster configuration across tasks.
+
+* **Parameterization**
+
+  * Passing parameters to notebooks.
+  * Using widgets to control logic.
+  * Environment-based configs: dev, test, prod.
+
+* **Secrets & Credential Management**
+
+  * Databricks Secrets.
+  * Using secret scopes in jobs.
+  * Rotating tokens and credentials.
+
+* **Monitoring & Logging Best Practices**
+
+  * Using the Job Run dashboard.
+  * Tracking pipeline lineage.
+  * Logging custom metrics to Delta tables.
+
+* **Error Handling Patterns**
+
+  * Try/except patterns in notebooks.
+  * Failing early vs failing gracefully.
+  * Writing error logs to storage.
+
+* **Versioned Deployments**
+
+  * Using Git Repos for code.
+  * CI/CD with Azure DevOps or GitHub Actions.
+  * Releasing versioned updates of pipelines.
+
+* **Data Lineage & Impact Analysis**
+
+  * Unity Catalog lineage view.
+  * Tracing upstream/downstream dependencies.
+
+* **Quality Gates Before Publishing to Prod**
+
+  * Schema validation tests.
+  * Unit tests with pytest.
+  * Sanity checks on row counts and nulls.
+
+* **Blue-Green Deployment for Pipelines**
+
+  * Deploying to a shadow pipeline first.
+  * Comparing outputs before switching traffic.
+
+* **Cost Observability**
+
+  * Tracking job cost per run.
+  * Detecting expensive clusters.
+  * Estimating cost per data pipeline.
+
+* **SLAs & SLOs for Data Pipelines**
+
+  * Defining expectations for data availability.
+  * Monitoring SLIs like latency and freshness.
+
+* **Backfilling Strategies**
+
+  * Historical loads without breaking prod.
+  * Idempotent pipeline design.
+
+* **Concurrency & Isolation**
+
+  * Running multiple pipelines without conflict.
+  * Handling table locks.
+  * Avoiding cluster overload.
