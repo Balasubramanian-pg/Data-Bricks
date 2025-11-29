@@ -2,7 +2,7 @@
 
 A structured path from absolute beginner to production-grade practitioner
 
-https://i.pinimg.com/736x/e0/f1/65/e0f16516b690b6b1d8ab1568a0284721.jpg
+![e0f16516b690b6b1d8ab1568a0284721](https://github.com/user-attachments/assets/752afbba-c616-4e1f-9b0e-866cdf6a2439)
 
 ## Guiding Philosophy
 
