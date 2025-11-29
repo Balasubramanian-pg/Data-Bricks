@@ -184,3 +184,88 @@ Databricks integrates with popular orchestrators used by enterprises.
 * Monitor run status via API
 
 In the next phase can focus on advanced engineering: CI/CD, Unity Catalog security models, SQL Warehousing, feature stores, streaming pipelines and performance tuning.
+
+## Additional Topics You Can Add
+
+### Testing and Validation in Production
+
+* Unit tests for transformations
+* Data quality gates
+* Smoke tests on upstream data
+* Canary runs before full pipeline execution
+
+### Observability and Monitoring
+
+* Metrics tracking
+* Pipeline health dashboards
+* SLA monitoring
+* Alert rules for data freshness or job delays
+* Logging patterns for notebooks and scripts
+
+### Dependency and Environment Management
+
+* Using Databricks Repos for versioning
+* Packaging Python code as wheels for jobs
+* Managing secrets with Databricks Secret Scopes
+* Handling environment files and cluster init scripts
+
+### Deployment and CI/CD
+
+* Notebook tests in CI
+* Automatic deployment of jobs via YAML configs
+* Promotion workflow: Dev to Test to Prod
+* Using Git branches as environments
+
+### Data Contracts and Interface Stability
+
+* Schema-validation logic
+* Backward-compatible changes
+* Communicating schema changes across teams
+
+### Advanced Scheduling Logic
+
+* Event-driven runs
+* Trigger jobs when upstream tables update
+* Chaining pipelines that run on dependencies instead of clocks
+
+### Error Recovery and Resilience
+
+* Automatic retries
+* Dead-letter queues
+* Backfilling logic for missed days
+* Replay strategies for late-arriving data
+
+### Cost Governance in Production
+
+* Cluster size policies
+* Spot instance strategies
+* Cost alerts for runaway jobs
+* Optimizing job cluster configs
+
+### Security and Access Controls
+
+* Unity Catalog permissions on production pipelines
+* Token-based job triggers
+* Service principals for orchestrators
+* Audit logging
+
+### Multi-Hop Architecture Patterns
+
+* Bronze/Silver/Gold organizational design
+* Idempotent pipeline patterns
+* Slowly changing dimensions
+* Surrogate keys and merge strategies
+
+### Streaming-Oriented Orchestration
+
+* How streaming jobs differ from scheduled ones
+* Trigger intervals
+* Checkpoint management
+* Failover patterns
+
+### Productionizing ML Workflows
+
+* Feature pipelines
+* Batch inference jobs
+* Drift detection
+* Model re-training schedules
