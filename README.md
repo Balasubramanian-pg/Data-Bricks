@@ -2,6 +2,8 @@
 
 A structured path from absolute beginner to production-grade practitioner
 
+https://i.pinimg.com/736x/e0/f1/65/e0f16516b690b6b1d8ab1568a0284721.jpg
+
 ## Guiding Philosophy
 
 Databricks is not “Spark with a UI”. It is an entire data and AI operating system built around the Lakehouse architecture. The smartest way to learn it is to treat it like an ecosystem. Every skill you pick up will make more sense when you understand how it fits into the full stack.
