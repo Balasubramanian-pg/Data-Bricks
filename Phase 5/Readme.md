@@ -187,3 +187,86 @@ Pick the direction that matches where you want to stand out. Each path goes deep
 
   * Linking Databricks to enterprise identity systems.
   * Network architecture for secure data access.
+
+## Path H: BI Engineering & Semantic Modeling
+
+* **Databricks SQL Mastery**
+
+  * SQL Warehouses for high concurrency.
+  * Choosing between Pro, Classic, and Serverless.
+  * Caching strategies for BI workloads.
+* **Semantic Layer Design**
+
+  * Unity Catalog semantic models.
+  * Defining metrics, dimensions, relationships.
+  * Version-controlling semantic definitions.
+* **Dashboard Engineering**
+
+  * Building low-latency dashboards.
+  * Parameterization, alerts, scheduled refresh.
+  * Performance tuning for BI queries.
+* **Integrations with BI Tools**
+
+  * Connecting Power BI and Tableau efficiently.
+  * Live vs Import models.
+  * Optimizing SQL Warehouse cost for BI consumption.
+* **Data Sharing for Consumers**
+
+  * Delta Sharing for external consumers.
+  * Certified data sets for internal analytics teams.
+
+## Path I: GenAI, LLMOps, and AI Engineering on Databricks
+
+* **Databricks Mosaic AI**
+
+  * Foundation model endpoints.
+  * Model customization via parameter-efficient tuning.
+  * Model serving architecture for GenAI apps.
+* **LLMOps Workflow**
+
+  * Prompts versioned and tracked in MLflow.
+  * Automated evaluation of generated text.
+  * Safety guardrails and red-teaming automation.
+* **RAG (Retrieval Augmented Generation)**
+
+  * Vector search, embeddings, knowledge stores.
+  * Document chunking strategies.
+  * Evaluation of retrieval precision.
+* **Building AI Applications**
+
+  * Multi-agent orchestration.
+  * Conversational retrieval chains.
+  * Integrating structured data with LLM inference.
+* **Scaling GenAI**
+
+  * Cache strategies.
+  * Cost control for frequent inference.
+  * GPU cluster management and acceleration via optimized runtimes.
+
+## Path J: Data Quality Engineering & Reliability
+
+* **Quality Frameworks**
+
+  * Expectations in Delta Live Tables.
+  * Data QA using libraries like Deequ or Great Expectations.
+  * Rule-based vs ML-based anomaly detection.
+* **Data Contracts & SLAs**
+
+  * Schema enforcement across teams.
+  * Breaking-change detection pipelines.
+  * Freshness, completeness, accuracy metrics.
+* **Automated Testing**
+
+  * Unit tests in notebooks.
+  * End-to-end regression tests for pipelines.
+  * Testing transformations with sample datasets.
+* **Error Recovery**
+
+  * Replay architecture for failed loads.
+  * Dead-letter pipelines for corrupted data.
+  * Automatic backfills and reprocessing workflows.
+* **Operational Dashboards**
+
+  * Data quality scorecards.
+  * Daily quality checks integrated into Jobs or DLT.
+  * Incident logging and RCA workflows.
