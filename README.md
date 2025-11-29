@@ -1,11 +1,5 @@
-Of course! Here is a comprehensive roadmap to learn Databricks, designed to take you from a complete beginner to a proficient practitioner, and even to an advanced level.
-
-This roadmap is broken down into phases, with key concepts and actionable steps for each.
-
 ### Guiding Philosophy
 Databricks is not a single technology but a **unified platform**. Your learning path will involve understanding its core components and how they work together. The goal is to move from using it as a simple Spark engine to leveraging it as a cohesive data and AI platform.
-
----
 
 ### Phase 1: Foundation & Onboarding (The "What and Why")
 **Goal:** Understand what Databricks is, why it's used, and get your first hands-on experience.
@@ -21,8 +15,6 @@ Databricks is not a single technology but a **unified platform**. Your learning 
 2.  **Sign up for the Community Edition:** This is a free, limited-capacity version perfect for learning. [Databricks Community Edition](https://community.cloud.databricks.com/).
 3.  **Complete the "Getting Started with Databricks" tutorial** on their website. It will guide you through creating your first cluster and running a notebook.
 4.  **Familiarize yourself with the Workspace UI:** Learn how to navigate, create folders, and import a sample notebook.
-
----
 
 ### Phase 2: Core Platform Proficiency (The "How")
 **Goal:** Become comfortable with the day-to-day tools and execution environment.
@@ -40,8 +32,6 @@ Databricks is not a single technology but a **unified platform**. Your learning 
 3.  **Upload a small CSV file to DBFS** and write PySpark code in a notebook to read it and display the first few rows.
 4.  **Write the data back to DBFS in Parquet format.**
 5.  **Explore the Cluster UI** to understand metrics and event logs.
-
----
 
 ### Phase 3: Deep Dive into Key Technologies (The "Power")
 **Goal:** Master the core technologies that make Databricks powerful.
@@ -68,8 +58,6 @@ Databricks is not a single technology but a **unified platform**. Your learning 
     *   **Time Travel:** Query the data as it was at a previous version.
 3.  **Complete the official "Intro to DataFrames" and "Delta Lake" tutorials** on Databricks Academy.
 
----
-
 ### Phase 4: Workflow Management & Production (The "Orchestration")
 **Goal:** Learn how to move from interactive development to scheduled, production-grade workflows.
 
@@ -84,8 +72,6 @@ Databricks is not a single technology but a **unified platform**. Your learning 
 1.  **Schedule your ETL notebook as a Job:** Use the Jobs UI to create a one-time or scheduled job.
 2.  **Build a simple DLT Pipeline:** Create a pipeline that ingests a CSV file, applies a simple transformation, and writes to a Delta table. Define a data quality expectation.
 3.  **(Optional) Trigger a Databricks Job from an external orchestrator** like Azure Data Factory or a simple script using the Databricks REST API.
-
----
 
 ### Phase 5: Specialization Paths (The "Expertise")
 Choose one or more paths based on your career goals.
@@ -109,8 +95,6 @@ Choose one or more paths based on your career goals.
 *   **SQL Warehouses:** Creating and configuring.
 *   **Dashboards & Alerts:** Building interactive dashboards and setting up query-based alerts.
 *   **Delta Engine:** The high-performance query engine for SQL on Delta Lake.
-
----
 
 ### Phase 6: Advanced Topics & Administration (The "Guru")
 **Goal:** Understand platform governance, security, and advanced use cases.
