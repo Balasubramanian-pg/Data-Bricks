@@ -107,3 +107,83 @@ Pick the direction that matches where you want to stand out. Each path goes deep
   * Unity Catalog for access control.
   * Certified and semantic tables for analysts.
   * Discovery patterns for organization-wide reuse.
+
+## Path D: MLOps & Production Machine Learning
+
+* **End-to-End Deployment Architecture**
+
+  * Batch inference with Jobs.
+  * Real-time inference using Model Serving.
+  * Streaming inference with Structured Streaming.
+* **MLflow in Production**
+
+  * Automated model promotion.
+  * Versioning, lineage, rollback.
+  * Model Evaluation API for safe deployment.
+* **CI/CD for ML**
+
+  * GitOps workflows.
+  * Automated packaging and deployment pipelines.
+  * Unit tests for data, features, and models.
+* **Model Monitoring**
+
+  * Drift detection.
+  * Data quality checks for inference features.
+  * Performance dashboards and alerting.
+
+## Path E: Data Governance & Security
+
+* **Unity Catalog Mastery**
+
+  * Centralized governance for tables, models, dashboards.
+  * Access control, lineage, and data discovery.
+* **Security & Compliance**
+
+  * Token management, SCIM, SSO.
+  * Sensitive data classification and masking.
+  * Audit logging and compliance reporting.
+* **Governed Development**
+
+  * Managed sharing.
+  * Versioned and certified datasets.
+  * Data contracts between teams.
+
+## Path F: Real-Time & Streaming Systems
+
+* **Structured Streaming**
+
+  * Trigger types, stateful vs stateless operations.
+  * Watermarking, late data handling.
+* **Streaming Architecture**
+
+  * Lambda vs Kappa patterns.
+  * Combining batch and streaming with Delta Live Tables.
+* **Sources & Sinks**
+
+  * Kafka, Kinesis, Event Hubs.
+  * Writing streaming data into Delta with guarantees.
+* **Operational Concerns**
+
+  * Checkpointing, recovery, backpressure.
+  * Scaling long-running streams.
+
+## Path G: Platform Engineering & DevOps for Databricks
+
+* **Workspace Automation**
+
+  * Terraform for clusters, UC, permissions, warehouses.
+  * Automated provisioning for new teams.
+* **Cluster Engineering**
+
+  * Cost-optimized cluster design.
+  * Automated cluster policies.
+  * GPU, Photon, spot instance strategies.
+* **Monitoring & Logging**
+
+  * Ganglia metrics.
+  * Cloud-native logging integrations.
+  * Workspace-wide observability dashboards.
+* **Enterprise Integration**
+
+  * Linking Databricks to enterprise identity systems.
+  * Network architecture for secure data access.
