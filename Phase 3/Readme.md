@@ -4,7 +4,7 @@
 
 # 3.1 Apache Spark
 
-The backbone of Databricks. Almost everything you do—ETL, data prep, ML feature engineering, analytics—runs on Spark.
+The backbone of Databricks. Almost everything you do - ETL, data prep, ML feature engineering, analytics - runs on Spark.
 
 ### Core Concepts to Understand
 
