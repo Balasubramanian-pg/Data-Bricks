@@ -1,97 +1,86 @@
-# What is Databricks
+# 001 What is Databricks
 
-Canonical documentation for What is Databricks. This document defines concepts, terminology, and standard usage.
+Canonical documentation for 001 What is Databricks. This document defines concepts, terminology, and standard usage.
 
 ## Purpose
+Databricks exists to resolve the historical friction between data engineering, data science, and business intelligence. Traditionally, organizations maintained separate environments: **Data Lakes** (for massive scale, unstructured data, and machine learning) and **Data Warehouses** (for structured data, performance, and SQL-based reporting). 
 
-Databricks is a unified analytics platform that enables data engineers, data scientists, and data analysts to collaborate and work together on big data analytics. This topic exists to provide a comprehensive understanding of Databricks, its core concepts, and its applications, addressing the problem space of big data processing, analytics, and machine learning. The purpose of this documentation is to serve as a single source of truth for Databricks, providing a clear and concise explanation of its capabilities, features, and best practices.
+This topic addresses the "Data Silo" problem by defining a unified architectural paradigm—the **Data Lakehouse**. Databricks provides a single, collaborative platform that combines the performance and governance of a data warehouse with the flexibility and cost-effectiveness of a data lake.
 
 > [!NOTE]
-> This documentation is intended to be implementation-agnostic and authoritative.
+> This documentation is intended to be implementation-agnostic and authoritative, focusing on the architectural principles of the Databricks platform rather than specific cloud provider integrations.
 
 ## Scope
-
 **In scope:**
-* Overview of Databricks and its architecture
-* Core concepts, such as Apache Spark, Delta Lake, and Databricks Notebooks
-* Standard usage and best practices for Databricks
+* The Data Lakehouse architectural paradigm.
+* Core components of the unified platform (Processing, Storage, Governance, and Orchestration).
+* Theoretical boundaries of collaborative data environments.
+* Open-source foundations (Spark, Delta Lake, MLflow).
 
 **Out of scope:**
-* Tool-specific implementations, such as Databricks on AWS or Azure
-* Vendor-specific behavior, such as custom or proprietary features
-* Detailed tutorials or step-by-step guides for using Databricks
+* Step-by-step UI tutorials or "How-to" guides.
+* Specific pricing models or cloud-provider-specific networking (AWS/Azure/GCP).
+* Third-party library documentation.
 
 ## Definitions
-
 | Term | Definition |
 |------|------------|
-| Databricks | A unified analytics platform that enables data engineers, data scientists, and data analysts to collaborate and work together on big data analytics |
-| Apache Spark | An open-source data processing engine that provides high-level APIs in Java, Python, Scala, and R for large-scale data processing |
-| Delta Lake | An open-source storage layer that provides a scalable and reliable way to store and manage data in a data lake |
-| Databricks Notebook | A web-based interface for writing, executing, and sharing code in a variety of programming languages, including Python, R, Scala, and SQL |
-
-> [!TIP]
-> Definitions should be stable over time; avoid contextual language.
+| **Lakehouse** | An architectural pattern that implements data warehousing features (ACID transactions, schema enforcement) directly on top of low-cost cloud object storage. |
+| **Delta Lake** | An open-source storage layer that brings reliability to data lakes by providing ACID transactions, scalable metadata handling, and unified streaming/batch processing. |
+| **Apache Spark** | A multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters. |
+| **Unity Catalog** | A unified governance solution for all data and AI assets in the Lakehouse, providing centralized access control and lineage. |
+| **Workspace** | An interactive environment that enables data professionals to collaborate on notebooks, experiments, and jobs. |
+| **Photon** | A high-performance, vectorized query engine designed to accelerate SQL workloads within the Lakehouse. |
 
 ## Core Concepts
 
-### Apache Spark
-Apache Spark is a fundamental component of Databricks, providing a high-level API for large-scale data processing. Spark is designed to handle massive amounts of data and provides a flexible and efficient way to process data in parallel.
+### 1. The Unified Data Lakehouse
+The Lakehouse is the foundational concept of Databricks. It eliminates the need to move data between a data lake and a downstream data warehouse. By using open formats (like Parquet) and a transactional layer (Delta Lake), the platform allows BI tools and ML frameworks to query the same source of truth simultaneously.
 
-### Delta Lake
-Delta Lake is a scalable and reliable storage layer that provides a way to store and manage data in a data lake. Delta Lake is designed to provide high-performance and low-latency data access, making it ideal for real-time analytics and machine learning workloads.
+### 2. Decoupled Storage and Compute
+Databricks adheres to the principle of separating storage from compute. Data resides in the customer's cloud object storage, while compute resources (clusters or SQL warehouses) are spun up on demand to process that data. This allows for independent scaling and cost optimization.
 
-### Databricks Notebooks
-Databricks Notebooks provide a web-based interface for writing, executing, and sharing code in a variety of programming languages. Notebooks are designed to facilitate collaboration and provide a flexible way to work with data, making it easy to prototype, test, and deploy data-driven applications.
+### 3. Open Standards and Interoperability
+The platform is built on open-source technologies. This prevents vendor lock-in, as the underlying data formats (Delta/Parquet) and processing logic (Spark/SQL) are portable and accessible by other systems.
+
+### 4. Collaborative Intelligence
+Databricks integrates notebooks, automated orchestration (Workflows), and model tracking (MLflow) into a single interface. This ensures that data engineers, analysts, and data scientists work on the same version of the data with shared logic.
 
 ## Standard Model
 
-The standard model for Databricks involves using Apache Spark as the primary data processing engine, Delta Lake as the storage layer, and Databricks Notebooks as the primary interface for working with data. This model provides a scalable, reliable, and flexible way to work with big data, making it ideal for a wide range of use cases, from data warehousing and business intelligence to machine learning and real-time analytics.
+The standard model for Databricks implementation is the **Medallion Architecture**. This is a data design pattern used to logically organize data as it flows through the Lakehouse:
 
-> [!IMPORTANT]
-> Deviations from the standard model should be explicitly documented and justified.
+1.  **Bronze (Raw):** The landing zone for raw data in its native format. No transformations are applied; it serves as a historical record.
+2.  **Silver (Validated/Filtered):** Data is cleaned, normalized, and joined. This layer provides a "Single Source of Truth" for ad-hoc analysis and data science.
+3.  **Gold (Enriched/Aggregated):** Data is modeled for consumption. It is structured into business-level aggregates or star schemas optimized for BI reporting and executive dashboards.
 
 ## Common Patterns
 
-* Data ingestion and processing using Apache Spark and Delta Lake
-* Data transformation and analysis using Databricks Notebooks and Spark SQL
-* Machine learning model training and deployment using Databricks and popular machine learning libraries such as scikit-learn and TensorFlow
+*   **ETL/ELT Pipelines:** Using Spark or Delta Live Tables (DLT) to ingest and transform data from various sources into the Medallion layers.
+*   **Streaming and Batch Unification:** Using the same code and logic to process real-time data streams and historical batch data.
+*   **Machine Learning Lifecycle:** Using MLflow to track experiments, package code into reproducible runs, and manage model versioning and deployment.
+*   **SQL Analytics:** Using SQL Warehouses to provide analysts with a familiar environment for querying the Lakehouse with low latency.
 
 ## Anti-Patterns
 
-* Using Databricks as a replacement for a traditional data warehouse, without considering the trade-offs and limitations
-* Not optimizing Spark jobs for performance, leading to slow and inefficient data processing
-* Not using version control and collaboration tools, such as Git and Databricks Notebooks, to manage and share code
-
-> [!WARNING]
-> These anti-patterns often lead to maintenance or scalability issues, and can limit the effectiveness of Databricks in supporting big data analytics and machine learning workloads.
+*   **The "Data Swamp":** Ingesting data into the Lakehouse without implementing schema enforcement or the Medallion architecture, leading to unsearchable and low-quality data.
+*   **Over-Provisioning:** Maintaining "Always-On" compute clusters for workloads that are intermittent or could be handled by Serverless compute.
+*   **Proprietary Silos:** Moving data out of the Lakehouse into a proprietary data warehouse for BI, which re-introduces data duplication and synchronization issues.
+*   **Ignoring Governance:** Managing permissions at the storage bucket level rather than using a centralized governance layer (Unity Catalog), leading to security gaps.
 
 ## Edge Cases
 
-* Handling large and complex datasets that exceed the limits of Spark or Delta Lake
-* Integrating Databricks with other data sources and systems, such as relational databases or messaging queues
-* Supporting real-time analytics and streaming data processing using Databricks and Spark
-
-> [!CAUTION]
-> Edge cases are frequently overlooked and may cause incorrect assumptions, so it's essential to carefully consider and plan for these scenarios when working with Databricks.
+*   **Small Data Workloads:** While Databricks scales to petabytes, using it for very small datasets (e.g., a few megabytes) may introduce unnecessary overhead compared to a simple SQL database.
+*   **Highly Regulated Air-Gapped Environments:** While Databricks supports various compliance standards, implementations in environments with no internet egress require specialized "Private Link" configurations and manual management.
+*   **Real-time Point Lookups:** While the Lakehouse is optimized for analytical queries (OLAP), it is not a replacement for a low-latency NoSQL database (OLTP) for millisecond-level point lookups in a web application.
 
 ## Related Topics
-
-* Big data analytics and processing
-* Machine learning and artificial intelligence
-* Data warehousing and business intelligence
-* Cloud computing and infrastructure
-
-## References
-
-* Apache Spark documentation: <https://spark.apache.org/docs/latest/>
-* Delta Lake documentation: <https://delta.io/>
-* Databricks documentation: <https://docs.databricks.com/>
+*   **002 Delta Lake Fundamentals:** Deep dive into the storage layer.
+*   **003 Apache Spark Architecture:** Understanding the distributed processing engine.
+*   **004 Unity Catalog and Governance:** Standards for data security and lineage.
+*   **005 Medallion Architecture Design:** Detailed implementation of data layers.
 
 ## Change Log
-
 | Version | Date | Description |
 |---------|------|-------------|
-| 1.0 | 2026-01-11 | Initial documentation |
-| 1.1 | 2026-01-12 | Added section on anti-patterns and edge cases |
-| 1.2 | 2026-01-13 | Updated references and added link to Databricks documentation |
+| 1.0 | 2026-01-11 | Initial AI-generated canonical documentation |
