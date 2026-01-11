@@ -1,58 +1,101 @@
-# Databricks Mastery Roadmap
+# Readme
 
-A structured path from absolute beginner to production-grade practitioner
+Canonical documentation for Readme. This document defines concepts, terminology, and standard usage.
 
-## Guiding Philosophy
+## Purpose
 
-Databricks is not “Spark with a UI”. It is an entire data and AI operating system built around the Lakehouse architecture. The smartest way to learn it is to treat it like an ecosystem. Every skill you pick up will make more sense when you understand how it fits into the full stack.
+The Readme topic exists to provide a centralized location for essential information about a project, product, or repository. It addresses the problem space of discovery, onboarding, and understanding the purpose, functionality, and usage of a given entity. The Readme serves as a crucial entry point for users, developers, and maintainers, offering a concise and informative overview of the project's scope, features, and requirements. By standardizing the content and structure of Readme files, this documentation aims to improve the overall user experience, reduce confusion, and facilitate collaboration.
 
-The goal is to start from fundamentals and move all the way to real-world engineering patterns, optimisation, governance and AI workloads.
+> [!NOTE]
+> This documentation is intended to be implementation-agnostic and authoritative.
 
-# Phase 1: Foundation and Onboarding
+## Scope
 
-**The What, Why and Basic Hands-On Familiarity**
+**In scope:**
+* Readme file structure and content guidelines
+* Best practices for writing and maintaining Readme files
+* Standardized terminology and formatting conventions
 
-### Objectives
+**Out of scope:**
+* Tool-specific implementations (e.g., GitHub Flavored Markdown, Bitbucket Markdown)
+* Vendor-specific behavior (e.g., GitHub Pages, GitLab Wiki)
+* Project-specific details (e.g., licensing, contributors, changelogs)
 
-Understand why Databricks exists, how the Lakehouse simplifies the modern data stack, and get your first working environment.
+## Definitions
 
-### Concepts to Master
+| Term | Definition |
+|------|------------|
+| Readme | A text file containing essential information about a project, product, or repository, typically located in the root directory. |
+| Markdown | A lightweight markup language used for formatting plain text, commonly used in Readme files. |
+| Project | A set of related files, directories, and resources, often hosted in a version control system. |
 
-**1. Databricks Overview**
+> [!TIP]
+> Definitions should be stable over time; avoid contextual language.
 
-* History and relation to Apache Spark
-* Shift from ETL + DWH + ML systems to a unified platform
-* Open standards: Delta Lake, MLflow, Unity Catalog
+## Core Concepts
 
-**2. Lakehouse Paradigm**
+### Introduction
+The introduction section provides a brief overview of the project, including its purpose, goals, and target audience.
 
-* Separation of storage and compute
-* Batch and streaming on one architecture
-* Governed tables, ACID transactions, schema enforcement
-* Why Lakehouse removes the need for separate data lakes and warehouses
+### Getting Started
+The getting started section offers step-by-step instructions for setting up and using the project, including any necessary dependencies or prerequisites.
 
-**3. Core Components**
+### Features and Functionality
+The features and functionality section describes the project's capabilities, including any notable features, APIs, or interfaces.
 
-* Workspace basics
-* Clusters vs SQL Warehouses
-* Notebooks
-* Repos
-* Jobs (high level)
+## Standard Model
 
-**4. Personas**
-Understand what each role does and which skills align with your goals:
+The standard model for a Readme file consists of the following sections:
+1. Introduction
+2. Getting Started
+3. Features and Functionality
+4. Contributing
+5. License
+6. Acknowledgments
 
-* Data Engineer
-* Data Scientist
-* Data Analyst
-* ML Engineer
-* Platform Engineer
+> [!IMPORTANT]
+> Deviations from the standard model should be explicitly documented and justified.
 
-### Action Steps
+## Common Patterns
 
-1. Read “What is Databricks?” official guide.
-2. Create a free Databricks Community Edition workspace.
-3. Launch your first cluster.
-4. Run a basic Spark notebook (DataFrame creation, transformations).
-5. Explore the UI: workspace browser, data browser, compute tab.
-6. Import and run a sample notebook from Databricks examples gallery.
+* Using a table of contents to facilitate navigation
+* Including screenshots or diagrams to illustrate key concepts
+* Providing a list of frequently asked questions (FAQs) or troubleshooting tips
+
+## Anti-Patterns
+
+> [!WARNING]
+> These anti-patterns often lead to maintenance or scalability issues.
+
+* Including excessive or unnecessary information, making the Readme file overly long or cumbersome
+* Failing to update the Readme file to reflect changes in the project or its dependencies
+* Using ambiguous or unclear language, leading to confusion among users or contributors
+
+## Edge Cases
+
+> [!CAUTION]
+> Edge cases are frequently overlooked and may cause incorrect assumptions.
+
+* Handling multiple Readme files in a single repository (e.g., for subprojects or modules)
+* Supporting multiple languages or localization in a single Readme file
+* Dealing with conflicting or outdated information in the Readme file
+
+## Related Topics
+
+* Documentation guidelines
+* Project management best practices
+* Version control systems (e.g., Git, Mercurial)
+
+## References
+
+* [GitHub Guidelines for Readme files](https://github.com/github-community/guides)
+* [Markdown specification](https://www.markdownguide.org/)
+* [RFC 2119: Key words for use in RFCs to Indicate Requirement Levels](https://tools.ietf.org/html/rfc2119)
+
+## Change Log
+
+| Version | Date | Description |
+|---------|------|-------------|
+| 1.0 | 2026-01-11 | Initial documentation |
+| 1.1 | 2026-01-12 | Added section on anti-patterns and edge cases |
+| 1.2 | 2026-01-13 | Updated references and related topics |
