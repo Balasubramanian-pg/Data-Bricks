@@ -1,207 +1,73 @@
-# Phase 3: Deep Dive into Key Technologies (The “Power”)
-
-**Goal:** Build serious technical strength by mastering the engines and storage layers that make Databricks a high-performance data and AI platform. This phase transforms you from someone who can “use Databricks” into someone who can **engineer systems on Databricks**.
-
-# 3.1 Apache Spark
-
-The backbone of Databricks. Almost everything you do - ETL, data prep, ML feature engineering, analytics - runs on Spark.
-
-### Core Concepts to Understand
-
-**1. Spark Architecture**
-
-* Driver vs Executor processes
-* Logical plan vs physical plan
-* Tasks, stages, shuffle mechanics
-* Why more partitions can speed up parallelism but too many can hurt performance
-
-**2. Spark APIs**
-
-* RDD (low-level, rarely used today)
-* DataFrames (the standard for ETL, analytics)
-* Datasets (type-safe API used mostly in Scala)
-
-**3. Transformations vs Actions**
-
-* Transformations (lazy): `select`, `filter`, `withColumn`, `groupBy`, `join`
-* Actions (trigger execution): `count()`, `collect()`, `show()`, `write` operations
-
-**4. Lazy Evaluation**
-
-* Spark builds a logical plan instead of executing immediately
-* Execution happens only when an action is called
-* This enables optimisation using the Catalyst optimizer
-
-**5. Partitioning & Performance**
-
-* Repartition vs Coalesce
-* When to partition your data
-* Skew handling
-* File size considerations
-* Shuffle operations and their cost
-
-### Essential Skills
-
-* Convert SQL logic into Spark transformations
-* Analyse query plans using `explain()`
-* Optimise slow transformations
-* Understand how joins affect shuffles
-
-# 3.2 Delta Lake (CRITICAL)
-
-The Lakehouse backbone. This is where reliability, performance and governance come from.
-
-### Core Principles
-
-**1. Storage Format + Transaction Log**
-
-* Delta is Parquet plus a transaction log
-* Provides ACID guarantees on data lake storage
-* Guarantees correctness under concurrency and failures
-
-**2. Time Travel**
-
-* Query older versions of data using `VERSION AS OF` or `TIMESTAMP AS OF`
-* Perfect for debugging, auditing and reproducing experiments
-
-**3. Schema Enforcement & Evolution**
-
-* Prevents dirty data from corrupting tables
-* Allows controlled evolution when schemas change
-
-**4. Key Delta Lake Features**
-
-* `MERGE INTO` for SCD logic and upserts
-* `UPDATE` and `DELETE` without rewriting entire tables
-* Auto-optimize features
-* Change Data Feed (CDF) for incremental downstream pipelines
-
-**5. Table Maintenance Commands**
-
-* `OPTIMIZE` to compact small files
-* `ZORDER` to improve selective query performance
-* `VACUUM` for cleaning old files and saving storage
-
-### Essential Skills
-
-* Build Bronze, Silver and Gold Delta tables
-* Read table history: `DESCRIBE HISTORY tableName`
-* Implement SCD1 and SCD2 using MERGE
-* Write streaming Delta pipelines
-* Optimise Delta tables for analytics performance
-
-# 3.3 Databricks Runtime
-
-Databricks does not run stock Spark. Its runtime is heavily optimized.
-
-### Runtime Types
-
-**1. Standard Runtime**
-
-* General-purpose Spark runtime
-* Supports most workloads
-
-**2. ML Runtime**
-
-* Includes pre-installed ML libraries
-* Supports MLflow, GPU acceleration, TensorFlow, PyTorch
-* Provides optimized training performance
-
-**3. Photon Runtime**
-
-* High-performance vectorized execution engine
-* Extremely fast for SQL queries on Delta tables
-* Great for warehousing workloads
-
-### Why You Should Care
-
-* Using the right runtime changes performance drastically
-* Photon can make BI workloads 2x–12x faster
-* ML Runtime saves hours of dependency headaches
-
-### Essential Skills
-
-* Choose correct runtime per workload
-* Benchmark performance between runtimes
-* Understand how upgrades affect pipeline behavior
-
-## Actionable Steps
-
-### Step 1: Convert Your Parquet File into a Delta Table
-
-Use PySpark or SQL:
-
-```python
-df.write.format("delta").save("/FileStore/mydata/delta/")
-```
-
-Or SQL:
-
-```sql
-CREATE TABLE my_delta_table
-USING DELTA
-LOCATION '/FileStore/mydata/delta/';
-```
-
-### Step 2: Practice Delta Operations
-
-Run:
-
-**UPDATE**
-
-```sql
-UPDATE my_delta_table SET columnA = 'new_value' WHERE columnB = 5;
-```
-
-**DELETE**
-
-```sql
-DELETE FROM my_delta_table WHERE columnB < 0;
-```
-
-**MERGE (Upsert)**
-
-```sql
-MERGE INTO target t
-USING source s
-ON t.id = s.id
-WHEN MATCHED THEN UPDATE SET *
-WHEN NOT MATCHED THEN INSERT *;
-```
-
-**Time Travel**
-
-```sql
-SELECT * FROM my_delta_table VERSION AS OF 0;
-```
-
-**Table History**
-
-```sql
-DESCRIBE HISTORY my_delta_table;
-```
-
-### Step 3: Explore Maintenance Commands
-
-Run:
-
-```sql
-OPTIMIZE my_delta_table;
-```
-
-```sql
-VACUUM my_delta_table RETAIN 168 HOURS;
-```
-
-```sql
-OPTIMIZE my_delta_table ZORDER BY (columnA);
-```
-
-### Step 4: Complete Courses
-
-* Databricks Academy: *Intro to DataFrames*
-* Databricks Academy: *Delta Lake Fundamentals*
-* Optional: Databricks Academy: *Optimizing Delta and Apache Spark*
-
-
-In the next phase can break down Medallion architecture, Auto Loader, job orchestration and designing production pipelines.
+# Readme
+
+Canonical documentation for Readme. This document defines the conceptual model, terminology, and standard usage patterns.
+
+> [!NOTE]
+> This documentation is implementation-agnostic and intended to serve as a stable reference.
+
+## 1. Purpose and Problem Space
+Describe why Readme exists and the class of problems it addresses.
+The Readme file serves as the primary entry point for users, developers, and contributors to understand the purpose, functionality, and usage of a project, library, or software. It addresses the problem of providing a centralized location for essential information, thereby facilitating onboarding, reducing confusion, and improving overall user experience.
+
+## 2. Conceptual Overview
+Provide a high-level mental model of the topic.
+A Readme is a text file that typically contains an introduction to the project, its features, requirements, installation instructions, usage examples, and other relevant details. It is usually written in a markup language, such as Markdown, and is often displayed prominently in the project's repository or documentation.
+
+## 3. Terminology and Definitions
+| Term | Definition |
+|------|------------|
+| Readme | A text file containing essential information about a project, library, or software. |
+| Markdown | A lightweight markup language used for formatting plain text. |
+| Repository | A central location where project files, including the Readme, are stored and managed. |
+| Documentation | A collection of documents, including the Readme, that provide information about a project or software. |
+| Contributor | An individual who contributes to the development, maintenance, or improvement of a project. |
+
+## 4. Core Concepts
+Explain the fundamental ideas that form the basis of this topic.
+The core concepts of a Readme include:
+* Introduction: A brief overview of the project, its purpose, and its goals.
+* Installation: Instructions on how to set up and install the project or software.
+* Usage: Examples and guidelines on how to use the project or software.
+* Contributing: Information on how to contribute to the project, including coding standards and submission guidelines.
+* Licensing: Details about the project's license and any relevant copyright information.
+
+## 5. Standard Model
+Describe the generally accepted or recommended model.
+The standard model for a Readme includes the following sections:
+* Header: A brief introduction to the project, including its name, version, and description.
+* Table of Contents: A list of links to the various sections within the Readme.
+* Introduction: A detailed overview of the project, its features, and its goals.
+* Getting Started: Instructions on how to install, configure, and use the project or software.
+* Contributing: Guidelines on how to contribute to the project, including coding standards and submission procedures.
+* License: Information about the project's license and any relevant copyright details.
+
+## 6. Common Patterns
+Document recurring, accepted patterns.
+Common patterns in Readme files include:
+* Using a standard format, such as Markdown, to ensure consistency and readability.
+* Including a table of contents to facilitate navigation.
+* Providing clear and concise instructions for installation, usage, and contribution.
+* Using headings and subheadings to organize and structure the content.
+* Including links to relevant resources, such as documentation, tutorials, or community forums.
+
+## 7. Anti-Patterns
+Describe common but discouraged practices.
+Anti-patterns in Readme files include:
+* Using overly complex or technical language that may confuse or intimidate users.
+* Including unnecessary or redundant information that may clutter the Readme.
+* Failing to update the Readme to reflect changes or updates to the project.
+* Using inconsistent formatting or styling that may make the Readme difficult to read.
+* Including sensitive or confidential information, such as passwords or API keys.
+
+## 8. References
+Provide exactly five authoritative external references.
+1. [GitHub Guidelines for Readme Files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
+2. [Markdown Documentation](https://www.markdownguide.org/)
+3. [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+4. [Open Source Initiative](https://opensource.org/)
+5. [W3C Markup Validation Service](https://validator.w3.org/)
+
+## 9. Change Log
+| Version | Date | Description |
+|---------|------|-------------|
+| 1.0 | 2026-01-26 | Initial documentation |
