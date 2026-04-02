@@ -117,6 +117,5 @@ Document notable changes to this topic over time.
 | 1.1 | 2026-02-01 | Added section on edge cases |
 | 1.2 | 2026-03-01 | Updated references to include IEEE paper |
 
----
 
 Note: This documentation is subject to change and may not reflect the current state of the topic. It is essential to review and update the documentation regularly to ensure accuracy and relevance.
