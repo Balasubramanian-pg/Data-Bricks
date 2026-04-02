@@ -91,6 +91,5 @@ The standard model for the Job Run History Dashboard consists of the following c
 | 1.1 | 2026-02-01 | Added section on edge cases |
 | 1.2 | 2026-03-01 | Updated standard model to include visualization component |
 
----
 
 Note: This documentation is subject to change and may not reflect the current implementation or usage of the Job Run History Dashboard.
