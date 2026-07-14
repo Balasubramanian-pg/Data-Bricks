@@ -23,4 +23,16 @@
 
 ## Related Concepts
 
-- 
+-
+
+<!-- AUTO-LINKS:START -->
+
+## Related Notes
+
+- [Classifying Databricks SQL assets](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks%20SQL/1%20-%20Data%20Warehousing%20in%20Databricks/Classifying%20Databricks%20SQL%20assets/Classifying%20Databricks%20SQL%20assets.md)
+- [Databricks SQL key assets](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks%20SQL/1%20-%20Data%20Warehousing%20in%20Databricks/Databricks%20SQL%20key%20assets/Databricks%20SQL%20key%20assets.md)
+- [Exploring some data](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks%20SQL/1%20-%20Data%20Warehousing%20in%20Databricks/Exploring%20some%20data/Exploring%20some%20data.md)
+- [Create a query](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks%20SQL/1%20-%20Data%20Warehousing%20in%20Databricks/Create%20a%20query/Create%20a%20query.md)
+- [Build a visualization](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks%20SQL/1%20-%20Data%20Warehousing%20in%20Databricks/Build%20a%20visualization/Build%20a%20visualization.md)
+
+<!-- AUTO-LINKS:END -->
