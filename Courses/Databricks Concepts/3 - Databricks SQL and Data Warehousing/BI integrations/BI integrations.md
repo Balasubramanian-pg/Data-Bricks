@@ -23,4 +23,16 @@
 
 ## Related Topics
 
-- 
+-
+
+<!-- AUTO-LINKS:START -->
+
+## Related Notes
+
+- [SQL optimized compute](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Databricks%20Concepts/3%20-%20Databricks%20SQL%20and%20Data%20Warehousing/SQL%20optimized%20compute/SQL%20optimized%20compute.md)
+- [Using Databricks as a warehouse](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Databricks%20Concepts/3%20-%20Databricks%20SQL%20and%20Data%20Warehousing/Using%20Databricks%20as%20a%20warehouse/Using%20Databricks%20as%20a%20warehouse.md)
+- [Creating queries](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Databricks%20Concepts/3%20-%20Databricks%20SQL%20and%20Data%20Warehousing/Creating%20queries/Creating%20queries.md)
+- [Building dashboards](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Databricks%20Concepts/3%20-%20Databricks%20SQL%20and%20Data%20Warehousing/Building%20dashboards/Building%20dashboards.md)
+- [Why Delta](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Databricks%20Concepts/1%20-%20Welcome%20to%20Databricks/Why%20Delta/Why%20Delta.md)
+
+<!-- AUTO-LINKS:END -->
