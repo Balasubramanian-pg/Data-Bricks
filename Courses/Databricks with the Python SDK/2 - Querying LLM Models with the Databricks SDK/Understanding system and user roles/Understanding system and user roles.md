@@ -23,4 +23,16 @@
 
 ## Related Concepts
 
-- 
+-
+
+<!-- AUTO-LINKS:START -->
+
+## Related Notes
+
+- [Integrating external data sources](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Databricks%20with%20the%20Python%20SDK/2%20-%20Querying%20LLM%20Models%20with%20the%20Databricks%20SDK/Integrating%20external%20data%20sources/Integrating%20external%20data%20sources.md)
+- [Querying DBRX LLM via Foundation Models API](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Databricks%20with%20the%20Python%20SDK/2%20-%20Querying%20LLM%20Models%20with%20the%20Databricks%20SDK/Querying%20DBRX%20LLM%20via%20Foundation%20Models%20API/Querying%20DBRX%20LLM%20via%20Foundation%20Models%20API.md)
+- [Using catalog data with AI agents](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Databricks%20with%20the%20Python%20SDK/2%20-%20Querying%20LLM%20Models%20with%20the%20Databricks%20SDK/Using%20catalog%20data%20with%20AI%20agents/Using%20catalog%20data%20with%20AI%20agents.md)
+- [Getting started with the Databricks SDK](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Databricks%20with%20the%20Python%20SDK/1%20-%20Introduction%20to%20the%20Databricks%20Python%20SDK/Getting%20started%20with%20the%20Databricks%20SDK/Getting%20started%20with%20the%20Databricks%20SDK.md)
+- [Default authentication](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Databricks%20with%20the%20Python%20SDK/1%20-%20Introduction%20to%20the%20Databricks%20Python%20SDK/Default%20authentication/Default%20authentication.md)
+
+<!-- AUTO-LINKS:END -->
