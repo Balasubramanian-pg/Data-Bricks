@@ -99,3 +99,15 @@ The standard model for a Readme file consists of the following sections:
 | 1.0 | 2026-01-11 | Initial documentation |
 | 1.1 | 2026-01-12 | Added section on anti-patterns and edge cases |
 | 1.2 | 2026-01-13 | Updated references and related topics |
+
+<!-- AUTO-LINKS:START -->
+
+## Related Notes
+
+- [22. Why Repos Matter Early](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Phase%202/2.%20Repos%20Mastery/22.%20Why%20Repos%20Matter%20Early/22.%20Why%20Repos%20Matter%20Early.md)
+- [98. Connecting GitHub to Databricks](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Phase%201/6.%20Repos%20and%20Jobs/98.%20Connecting%20GitHub%20to%20Databricks/98.%20Connecting%20GitHub%20to%20Databricks.md)
+- [23. Connecting Repos to GitHub](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Phase%202/2.%20Repos%20Mastery/23.%20Connecting%20Repos%20to%20GitHub/23.%20Connecting%20Repos%20to%20GitHub.md)
+- [72. Markdown Magic Command](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Phase%202/4.%20Notebooks%20Mastery/72.%20Markdown%20Magic%20Command/72.%20Markdown%20Magic%20Command.md)
+- [38. Repos Folder Structure Standards](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Phase%202/2.%20Repos%20Mastery/38.%20Repos%20Folder%20Structure%20Standards/38.%20Repos%20Folder%20Structure%20Standards.md)
+
+<!-- AUTO-LINKS:END -->
