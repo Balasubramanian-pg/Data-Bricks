@@ -15,3 +15,15 @@ Introduction to the Databricks Lakehouse platform. Covers UI navigation, platfor
 - 1 - Introduction to Databricks (6 lessons)
 - 2 - Data Intelligence Platform Fundamentals (9 lessons)
 - 3 - Introduction to SQL in Databricks (4 lessons)
+
+<!-- AUTO-LINKS:START -->
+
+## Related Notes
+
+- [README](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Databricks%20Concepts/README/README.md)
+- [README](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks/1%20-%20Introduction%20to%20Databricks/README/README.md)
+- [README](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks%20SQL/README/README.md)
+- [README](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Data%20Management%20in%20Databricks/README/README.md)
+- [README](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Data%20Visualization%20in%20Databricks/README/README.md)
+
+<!-- AUTO-LINKS:END -->
