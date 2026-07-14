@@ -23,4 +23,16 @@
 
 ## Related Concepts
 
-- 
+-
+
+<!-- AUTO-LINKS:START -->
+
+## Related Notes
+
+- [Data Intelligence Platform   Compute](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks/2%20-%20Data%20Intelligence%20Platform%20Fundamentals/Data%20Intelligence%20Platform%20-%20Compute/Data%20Intelligence%20Platform%20-%20Compute.md)
+- [Create your first cluster](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks/2%20-%20Data%20Intelligence%20Platform%20Fundamentals/Create%20your%20first%20cluster/Create%20your%20first%20cluster.md)
+- [Setting Permissions](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks/2%20-%20Data%20Intelligence%20Platform%20Fundamentals/Setting%20Permissions/Setting%20Permissions.md)
+- [Adding your datasets](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks/2%20-%20Data%20Intelligence%20Platform%20Fundamentals/Adding%20your%20datasets/Adding%20your%20datasets.md)
+- [Managing Data Catalogs](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks/2%20-%20Data%20Intelligence%20Platform%20Fundamentals/Managing%20Data%20Catalogs/Managing%20Data%20Catalogs.md)
+
+<!-- AUTO-LINKS:END -->
