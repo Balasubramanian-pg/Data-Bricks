@@ -23,4 +23,16 @@
 
 ## Related Concepts
 
-- 
+-
+
+<!-- AUTO-LINKS:START -->
+
+## Related Notes
+
+- [MERGE operations](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks%20SQL/4%20-%20Advanced%20patterns%20with%20Databricks%20SQL/MERGE%20operations/MERGE%20operations.md)
+- [Advanced optimization techniques](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks%20SQL/4%20-%20Advanced%20patterns%20with%20Databricks%20SQL/Advanced%20optimization%20techniques/Advanced%20optimization%20techniques.md)
+- [Window functions](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks%20SQL/4%20-%20Advanced%20patterns%20with%20Databricks%20SQL/Window%20functions/Window%20functions.md)
+- [Handling high velocity data](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks%20SQL/4%20-%20Advanced%20patterns%20with%20Databricks%20SQL/Handling%20high%20velocity%20data/Handling%20high%20velocity%20data.md)
+- [Creating visualizations](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Introduction%20to%20Databricks%20SQL/3%20-%20Data%20analysis%20with%20Databricks%20SQL/Creating%20visualizations/Creating%20visualizations.md)
+
+<!-- AUTO-LINKS:END -->
