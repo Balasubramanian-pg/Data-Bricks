@@ -23,4 +23,16 @@
 
 ## Related Topics
 
-- 
+-
+
+<!-- AUTO-LINKS:START -->
+
+## Related Notes
+
+- [Cloning dashboards](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Data%20Visualization%20in%20Databricks/4%20-%20Dashboard%20Management/Cloning%20dashboards/Cloning%20dashboards.md)
+- [Deleting dashboards](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Data%20Visualization%20in%20Databricks/4%20-%20Dashboard%20Management/Deleting%20dashboards/Deleting%20dashboards.md)
+- [Sharing with permissions](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Data%20Visualization%20in%20Databricks/4%20-%20Dashboard%20Management/Sharing%20with%20permissions/Sharing%20with%20permissions.md)
+- [Configuring alerts](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Data%20Visualization%20in%20Databricks/4%20-%20Dashboard%20Management/Configuring%20alerts/Configuring%20alerts.md)
+- [Creating dashboards](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Data%20Visualization%20in%20Databricks/3%20-%20Dashboarding%20Basics/Creating%20dashboards/Creating%20dashboards.md)
+
+<!-- AUTO-LINKS:END -->
