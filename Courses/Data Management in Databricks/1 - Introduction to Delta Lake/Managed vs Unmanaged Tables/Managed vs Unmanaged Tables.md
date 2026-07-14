@@ -23,4 +23,16 @@
 
 ## Related Concepts
 
-- 
+-
+
+<!-- AUTO-LINKS:START -->
+
+## Related Notes
+
+- [Creating unmanaged tables](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Data%20Management%20in%20Databricks/1%20-%20Introduction%20to%20Delta%20Lake/Creating%20unmanaged%20tables/Creating%20unmanaged%20tables.md)
+- [Persistence and scope of tables](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Data%20Management%20in%20Databricks/1%20-%20Introduction%20to%20Delta%20Lake/Persistence%20and%20scope%20of%20tables/Persistence%20and%20scope%20of%20tables.md)
+- [Optimizing tables](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Data%20Management%20in%20Databricks/1%20-%20Introduction%20to%20Delta%20Lake/Optimizing%20tables/Optimizing%20tables.md)
+- [Deleting tables](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Data%20Management%20in%20Databricks/1%20-%20Introduction%20to%20Delta%20Lake/Deleting%20tables/Deleting%20tables.md)
+- [Table showdown](https://github.com/Balasubramanian-pg/Data-Bricks/blob/main/Courses/Data%20Management%20in%20Databricks/1%20-%20Introduction%20to%20Delta%20Lake/Table%20showdown/Table%20showdown.md)
+
+<!-- AUTO-LINKS:END -->
